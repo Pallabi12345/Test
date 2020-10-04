@@ -19,7 +19,8 @@ public class App
         Calendar c1=Calendar.getInstance();
 		Calendar c2=Calendar.getInstance();
 		boolean b=DateUtils.isSameDay(c1, c2);
-		if(b==true)
+		boolean bb=DateUtils.isSameLocalTime(c1,c2);
+		if(b==true && bb==true)
 			System.out.println("equal date ");
 		else
 			System.out.println("not equal date");
