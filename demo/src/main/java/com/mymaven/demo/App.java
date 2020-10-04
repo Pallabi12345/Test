@@ -26,7 +26,7 @@ public class App
 			System.out.println("not equal date");
 		Date d1=new Date(562312L);
 		Date d2=new Date(121123456L);
-		b=DateUtils.isSameDay(d1, d2);
+		b=DateUtils.isSameInstant(d1, d2);
 		if(b==true)
 			System.out.println("same date");
 		else
